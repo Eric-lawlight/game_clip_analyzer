@@ -1,0 +1,21 @@
+# ── Sprint 1 (뼈대) ──────────────────────────────────────────
+ffmpeg-python==0.2.0        # ffprobe 래퍼 (video_inspector)
+
+# ── Sprint 2 (핵심 파이프라인) ────────────────────────────────
+# openai-whisper             # Whisper large-v3
+# librosa==0.10.2            # 오디오 에너지/피치 분석
+# soundfile                  # librosa 의존
+
+# ── Sprint 3 (스코어링 + 출력) ────────────────────────────────
+# (추가 패키지 없음, 표준 라이브러리만 사용)
+
+# ── Sprint 4 (Phase 2 업그레이드) ────────────────────────────
+# transformers>=4.40         # KoELECTRA, Qwen2-VL
+# torch>=2.2                 # GPU 추론
+# bitsandbytes               # 4bit 양자화 (Qwen2-VL)
+# pyannote.audio             # 화자 분리
+# qwen-vl-utils              # Qwen2-VL 전처리
+
+# ── UI ───────────────────────────────────────────────────────
+# PyQt6                      # module_selector UI (Sprint 1 ③)
+# (개발 초기에는 tkinter 또는 rich CLI로 대체 가능)
